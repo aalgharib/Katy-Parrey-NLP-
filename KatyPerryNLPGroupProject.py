@@ -36,5 +36,27 @@ plt.show()
 # Pre-processing
 # =============================================================================
 
+import nltk
+from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.feature_extraction.text import CountVectorizer
 
+
+
+count_vectorizer = CountVectorizer(stop_words='english')
+train_tc = count_vectorizer.fit_transform(katy_perry)
+
+print("\nDimensions of  data:", train_tc.shape)
+
+tfidf = TfidfTransformer()
+train_tfidf = tfidf.fit_transform(train_tc)
+type(train_tfidf)
+
+# Transform input data using count vectorizer
+input_tc = count_vectorizer.transform(katy_perry)
+type(input_tc)
+print(input_tc)
+# Transform vectorized data using tfidf transformer
+input_tfidf = tfidf.transform(input_tc)
+type(input_tfidf)
+print(input_tfidf)
 
