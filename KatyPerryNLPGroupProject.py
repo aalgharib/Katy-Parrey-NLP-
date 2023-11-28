@@ -10,7 +10,7 @@ import pandas as pd
 import nltk
 import matplotlib.pyplot as plt
 #Import file containing data
-path = "C:/Users/becky/Documents/Software Engineering/Semester 3/COMP237-Introduction to AI/NLPProject/"
+path = os.path.dirname(os.path.abspath(__file__))
 filename = "Youtube02-KatyPerry (1).csv"
 fullpath = os.path.join(path,filename)
 katy_perry = pd.read_csv(fullpath, sep=',')
