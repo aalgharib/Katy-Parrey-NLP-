@@ -61,7 +61,7 @@ type(input_tfidf)
 print(input_tfidf)
 
 # =============================================================================
-# Model Training
+# Model Building & Training
 # =============================================================================
 from sklearn.model_selection import cross_val_score, KFold
 from sklearn.naive_bayes import MultinomialNB
