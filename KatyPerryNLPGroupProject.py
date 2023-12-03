@@ -32,13 +32,12 @@ plt.ylabel("Count")
 plt.xticks([0, 1])
 plt.show()
 
-<<<<<<< HEAD
-=======
+
 # Pre-processing
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import CountVectorizer
 
->>>>>>> bc55df974853010ebe668e22e89427477156d2b0
+
 
 # =============================================================================
 # Pre-processing
@@ -62,18 +61,18 @@ from sklearn.model_selection import cross_val_score, KFold
 from sklearn.naive_bayes import MultinomialNB
 
 
-<<<<<<< HEAD
+
 
 # =============================================================================
 # Model Building & Training
 # =============================================================================
 from sklearn.model_selection import cross_val_score, KFold
 from sklearn.naive_bayes import MultinomialNB
-=======
+
 # =============================================================================
 # Model Building & Training
 # =============================================================================
->>>>>>> bc55df974853010ebe668e22e89427477156d2b0
+
 # Shuffle the dataset
 katy_perry_shuffled = katy_perry.sample(frac=1, random_state=99)
 
@@ -104,7 +103,7 @@ cross_val_scores = cross_val_score(
 )
 
 # Print the mean results of model accuracy
-<<<<<<< HEAD
+
 print("Cross Validated Accuracy with 5 k-folds: ", np.mean(cross_val_scores))
 
 
@@ -116,9 +115,9 @@ cross_val_scores = cross_val_score(
 
 # Print the mean results of model accuracy
 print("Cross Validated Accuracy with 9 k-folds: ", np.mean(cross_val_scores))
-=======
+
 print("Cross Validated Accuracy: ", np.mean(cross_val_scores))
->>>>>>> bc55df974853010ebe668e22e89427477156d2b0
+
 
 # =============================================================================
 # Model Testing
@@ -163,8 +162,8 @@ new_comments_predictions = naive_bayes_classifier.predict(new_comments_tfidf)
 
 # Display results
 for comment, prediction in zip(new_comments, new_comments_predictions):
-<<<<<<< HEAD
+
     print(f"Comment: '{comment}' - Predicted Class: {prediction}")
-=======
-    print(f"Comment: '{comment}' - Predicted Class: {prediction}")
->>>>>>> bc55df974853010ebe668e22e89427477156d2b0
+
+
+
